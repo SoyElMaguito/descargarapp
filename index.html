@@ -1,0 +1,224 @@
+z
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meyaj - App de Servicios</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            background: linear-gradient(135deg, #FF6B35 0%, #2E7D32 100%);
+            color: white;
+            padding: 40px 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.95;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+
+        .section h2 {
+            color: #2E7D32;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #FF6B35;
+            padding-bottom: 10px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #FF6B35;
+        }
+
+        .feature h3 {
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .download {
+            text-align: center;
+        }
+
+        .qr-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .qr-code {
+            border: 3px solid #eee;
+            padding: 10px;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #2E7D32;
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .download-btn:hover {
+            background: #1B5E20;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .tech {
+            background: #E8F5E9;
+            color: #2E7D32;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🔧 Meyaj</h1>
+            <p>Conectando personas que necesitan trabajos con prestadores de servicios</p>
+        </header>
+
+        <section class="section">
+            <h2>📱 ¿Qué es Meyaj?</h2>
+            <p>Meyaj es una aplicación móvil desarrollada en Flutter que facilita la conexión entre personas que
+                requieren
+                servicios del hogar (limpieza, jardinería, plomería, electricidad, mandados, clases y más) con
+                trabajadores calificados en Mérida, Yucatán.</p>
+        </section>
+
+        <section class="section">
+            <h2>✨ Características Principales</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>🔍 Explorar Trabajos</h3>
+                    <p>Busca y filtra trabajos por categoría con ubicación en mapa</p>
+                </div>
+                <div class="feature">
+                    <h3>📝 Publicar Trabajos</h3>
+                    <p>Crea publicaciones con fotos, descripción, pago, fechas y ubicación</p>
+                </div>
+                <div class="feature">
+                    <h3>👤 Perfil Profesional</h3>
+                    <p>Agrega tu oficio y habilidades para destacar tu perfil</p>
+                </div>
+                <div class="feature">
+                    <h3>🗺️ Ubicación con Mapa</h3>
+                    <p>Selecciona ubicación precisa con geolocalización</p>
+                </div>
+                <div class="feature">
+                    <h3>🔔 Notificaciones</h3>
+                    <p>Mantente al tanto de nuevas oportunidades</p>
+                </div>
+                <div class="feature">
+                    <h3>💬 Gestión de Publicaciones</h3>
+                    <p>Administra tus trabajos publicados desde tu perfil</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section download">
+            <h2>📥 Descargar Aplicación</h2>
+            <p>Escanea el código QR o descarga directamente el APK para Android</p>
+            <div class="qr-container">
+                <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://github.com/TU-USUARIO/TU-REPO/releases/download/v1.0.0/meyaj_app.apk"
+                    alt="Código QR para descargar Meyaj" class="qr-code">
+                <p><strong>Escanea con tu celular Android</strong></p>
+            </div>
+            <a href="https://github.com/TU-USUARIO/TU-REPO/releases/download/v1.0.0/meyaj_app.apk" class="download-btn">
+                Descargar APK Directamente
+            </a>
+            <p class="note">
+                * Requiere Android 5.0 o superior
+            </p>
+        </section>
+
+        <section class="section">
+            <h2>🛠️ Tecnologías Utilizadas</h2>
+            <div class="tech-stack">
+                <span class="tech">Flutter</span>
+                <span class="tech">Dart</span>
+                <span class="tech">Supabase</span>
+                <span class="tech">PostgreSQL</span>
+                <span class="tech">Flutter Map</span>
+                <span class="tech">Geolocator</span>
+                <span class="tech">Image Picker</span>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desarrollado con ❤️ para conectar la comunidad de Mérida</p>
+        </footer>
+    </div>
+</body>
+
+</html>
